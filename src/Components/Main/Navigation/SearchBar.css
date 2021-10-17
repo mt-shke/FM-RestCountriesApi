@@ -1,0 +1,46 @@
+form div {
+	width: 100%;
+	background-color: var(--primary-bg-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+	flex-direction: row;
+	position: relative;
+}
+
+input {
+	width: 100%;
+	height: 3rem;
+	border-color: rgba(165, 165, 165, 0.548);
+	border: 1px;
+	box-shadow: 0px 0px 16px -4px var(--primary-border);
+	border-radius: 4px;
+	font-size: 1rem;
+	padding-left: 4.5rem;
+	padding-right: 2rem;
+	background-color: inherit;
+	color: var(--primary-color);
+}
+
+input::placeholder {
+	color: rgba(184, 184, 184, 0.911);
+	font-size: 0.97rem;
+	margin-left: 2rem;
+}
+
+.search {
+	background-color: inherit;
+	height: 3rem;
+	width: clamp(1rem, 6.5%, 2rem);
+	color: var(--primary-color);
+	position: absolute;
+	left: 1.6rem;
+	margin-right: 2rem;
+}
+
+@media (min-width: 800px) {
+	form div {
+		width: 150%;
+	}
+}

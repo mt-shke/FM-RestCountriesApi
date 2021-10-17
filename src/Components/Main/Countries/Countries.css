@@ -1,0 +1,73 @@
+.countries--container {
+	display: flex;
+	gap: 4rem 0;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.country {
+	width: 18rem;
+	height: 20rem;
+	border-radius: 8px;
+	box-shadow: 0px 2px 8px -2px var(--primary-box-shadow);
+	background-color: var(--primary-bg-white);
+}
+
+.country:hover {
+	cursor: pointer;
+}
+
+.flag {
+	height: 10rem;
+	width: 100%;
+	border-radius: 8px 8px 0 0;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.country-stats {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	text-align: left;
+	padding: 1.4rem;
+	font-size: 1.1rem;
+}
+
+.country-stats:first-child {
+	margin-bottom: 0.7rem;
+}
+
+li {
+	list-style-type: none;
+	font-weight: 400;
+}
+span {
+	font-weight: 600;
+}
+
+@media (min-width: 800px) {
+	.container--countries {
+		flex-direction: row;
+	}
+
+	.country {
+		width: 16rem;
+	}
+}
+
+@media (min-width: 800px) {
+	.countries--container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 8rem;
+	}
+
+	.country {
+		width: 16rem;
+	}
+}

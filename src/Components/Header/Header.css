@@ -1,0 +1,20 @@
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 5.7rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.title div:hover {
+	cursor: pointer;
+}
+
+.moon {
+	margin: 0 0.3rem;
+	position: relative;
+	bottom: -0.1rem;
+}

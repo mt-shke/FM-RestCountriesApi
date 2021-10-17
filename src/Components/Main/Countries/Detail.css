@@ -1,0 +1,158 @@
+.details {
+	width: 94%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.button-back {
+	height: 2rem;
+	width: 6rem;
+	padding-right: 0.3rem;
+	background-color: var(--primary-bg-white);
+	box-shadow: 0px 0px 8px -1px var(--primary-box-shadow);
+	color: var(--primary-color);
+	font-size: 0.98rem;
+	margin: 1.5rem 0 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.2rem;
+	border: none;
+}
+.button-back:hover {
+	cursor: pointer;
+}
+
+.details--country--container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.arrowLeft {
+	height: 1.6rem;
+	width: 1.8rem;
+}
+
+.flag-detail {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	object-fit: cover;
+	box-shadow: 0px 1px 6px -2px var(--primary-box-shadow);
+}
+.stats--container {
+	width: 100%;
+	text-align: left;
+	padding: 2rem 0;
+}
+
+.stats--container h2 {
+	font-size: 1.64rem;
+}
+.stats--inner--container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding-top: 1.8rem;
+}
+.stats {
+	min-width: 45%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.detail-stats li span {
+	margin-right: 0.2rem;
+}
+
+.stats li {
+	word-break: keep-all;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.detail-stats-three {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+	width: 100%;
+	gap: 0.7rem;
+}
+
+.border-countries {
+	font-weight: 600;
+	font-size: 1.1rem;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	width: 100%;
+}
+
+.border-countries li {
+	display: grid;
+	place-items: center;
+	padding: 0.2rem 0.6rem;
+	font-size: 0.78rem;
+	font-weight: 600;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px -1px var(--primary-box-shadow);
+	background-color: var(--primary-bg-white);
+}
+
+.border-countries li:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 800px) {
+	.details {
+		width: 100%;
+	}
+	.button-back {
+		height: 2.2rem;
+		width: 8rem;
+		margin: 2.5rem 0 3rem;
+	}
+
+	.details--country--container {
+		flex-direction: row;
+	}
+
+	.flag-detail {
+		width: 46%;
+		height: 100%;
+	}
+
+	.stats--container {
+		width: 50%;
+		padding: 1.6rem 0 0 1.6rem;
+	}
+
+	.stats--container h2 {
+		font-size: 2rem;
+	}
+
+	.detail-stats li span {
+		margin-right: 0.2rem;
+	}
+
+	.detail-stats-three {
+		flex-direction: row;
+	}
+
+	.border-countries li {
+		padding: 0.2rem 0.8rem;
+	}
+}
