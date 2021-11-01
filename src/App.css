@@ -20,6 +20,7 @@
 	min-height: 100vh;
 	background-color: var(--primary-bg2-white);
 	color: var(--primary-color);
+	overflow-x: hidden;
 }
 
 * {

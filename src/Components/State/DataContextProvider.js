@@ -47,9 +47,16 @@ const listReducer = (state, action) => {
 
 	if (action.type === "FETCHALL") {
 		const countries = action.countries;
-		const string = JSON.stringify(countries);
+		const sortedName = countries.map((country) => country.name.common).sort();
+		let sorted = [];
+		countries.forEach((country) => {
+			const index = sortedName.indexOf(country.name.common);
+			sorted[index] = country;
+		});
+
+		const string = JSON.stringify(sorted);
 		localStorage.setItem("countries", string);
-		return { ...state, allCountries: countries };
+		return { ...state, allCountries: sorted };
 	}
 
 	if (action.type === "FETCHLOCAL") {

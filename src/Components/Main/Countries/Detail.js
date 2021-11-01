@@ -52,7 +52,7 @@ const Detail = () => {
 						<ul className="detail-stats-two stats">
 							<li>
 								<span>Top Level Domain: </span>
-								{[...country.tld]}
+								{country.tld ? [...country.tld] : country.tld}
 							</li>
 							<li>
 								<span>Currencies: </span> {currencies}

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import css from "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
